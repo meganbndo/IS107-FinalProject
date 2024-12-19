@@ -11,12 +11,12 @@ import seaborn as sns
 import os
 
 # Database connection setup
-db_user = os.getenv('postgres')
-db_password = os.getenv('postgres')
-db_host = os.getenv('http://192.168.1.236:8501')
-db_name = os.getenv('data_warehouse')
-
-engine = create_engine(f'postgresql://{db_user}:{db_password}@{db_host}/{db_name}')
+db_name = "data_warehouse"
+db_user = "postgres"
+db_password = "postgres"
+db_host = "localhost"
+db_port = 5432
+engine = create_engine(f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}")
 
 # Load data from the database
 sales_query = """
