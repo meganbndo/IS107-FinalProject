@@ -1,0 +1,106 @@
+/* Global Styles
+body {
+  background-color: #f4f6f9;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #2d87a9;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 40px;
+  font-weight: bold;
+} */
+
+.sidebar {
+  background-color: #1e1e2d;
+  padding: 2rem;
+  color: white;
+}
+
+.sidebar .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar .radio-group {
+  margin-bottom: 2rem;
+}
+
+.sidebar .radio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.sidebar .radio-item input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.sidebar .filter-section {
+  margin-top: 2rem;
+}
+
+.sidebar .filter-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #2b2b3d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.sidebar .date-range {
+  background-color: #2b2b3d;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Custom styling for radio buttons */
+.sidebar input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #6c757d;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+}
+
+.sidebar input[type="radio"]:checked {
+  border-color: #007bff;
+}
+
+.sidebar input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+/* Dropdown arrow customization */
+.sidebar select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 1em;
+}
