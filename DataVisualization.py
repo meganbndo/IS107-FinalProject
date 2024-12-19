@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from sqlalchemy import create_engine
-from D_DataMining import RetailAnalytics
+from C_DataMining import RetailAnalytics
 import matplotlib.pyplot as plt
 import seaborn as sns
 
